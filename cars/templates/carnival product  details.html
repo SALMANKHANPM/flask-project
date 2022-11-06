@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kia Carnival</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/product details.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+  </head>
+  <body>
+
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = "{{ url_for('static',filename='images/carnival1.jpg') }}" alt = " image">
+              <img src = "{{ url_for('static',filename='images/carnival2.jpg') }}" alt = " image">
+              <img src = "{{ url_for('static',filename='images/carnival3.png') }}" alt = " image">
+              <img src = "{{ url_for('static',filename='images/carnival4.jpg') }}" alt = " image">
+                            
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src = "{{ url_for('static',filename='images/carnival1.jpg') }}" alt = "shoe image" height="150" width="300">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "{{ url_for('static',filename='images/carnival2.jpg') }}" alt = "shoe image" height="150" width="300">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "{{ url_for('static',filename='images/carnival3.png') }}" alt = "shoe image" height="150" width="300">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = "{{ url_for('static',filename='images/carnival4.jpg') }}" alt = "shoe image"height="150" width="300">
+              </a>
+            </div>
+                     
+            
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title">Kia Carnival</h2>
+
+
+
+          <div class = "product-price">
+              <h2> <b> PRICE:INR-34,50,000 </b></h2>
+
+          </div>
+
+          <div class = "product-detail">
+            <h2>about this item: </h2>
+            <p><b>Kia Carnival: </b>Kia Carnival 2021: Kia has revealed the fourth-gen Carnival and it is expected to launch it in India by 2022. The price of Kia Carnival starts at Rs. 24.95 Lakh and goes upto Rs. 33.95 Lakh.</p>
+               <p><b>Kia Carnival Versions: </b> Carnival is available in 2 variants. Out of these 2 variants, 1 are Manual and 1 are Automatic.</p>
+                          
+            <h3> Specifications</h3>
+            <img src="{{ url_for('static',filename='images/carnival specifications.png') }}" alt="specifications">
+            
+          </div>
+
+
+          <div class = "purchase-info">
+
+            <button type = "button" class = "btn" onclick="window.location.href='carnivalpay'">
+              Purchase Now <i class = "fas fa-shopping-cart"></i>
+            </button>
+            <button type = "button" class = "btn">Compare</button>
+          </div>
+
+
+          <div class = "social-links">
+            <p>Share At: </p>
+            <a href = "https://www.facebook.com/">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "https://twitter.com/?lang=en-in">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "https://www.instagram.com/">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "https://web.whatsapp.com/">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "https://in.pinterest.com/login/">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(255, 255, 255);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:greenyellow;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="all.html">ALL</a></li>
+  <li><a href="#news">Exterior</a></li>
+  <li><a href="#contact">Interior</a></li>
+  <li><a href="#about">Color</a></li>
+</ul>
+
+
+  </body>
+
+</html>

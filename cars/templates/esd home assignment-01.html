@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let f = document.forms["myForm"]["fname"].value;
+  let l = document.forms["myForm"]["lname"].value;
+  let u = document.forms["myForm"]["uname"].value;
+  let p = document.forms["myForm"]["password"].value;
+  
+  var x=document.forms["myForm"]["email"].value;  
+  var atposition=x.indexOf("@");  
+  var dotposition=x.lastIndexOf(".");  
+
+  if (f==null||f=="") {
+    alert("First Name must be filled out");
+    return false;
+  }
+  if (l==null||l=="") {
+    alert("Last Name must be filled out");
+    return false;}
+   if (u==null||u=="") {
+    alert("Username must be filled out");
+    return false;}
+   if(u.length<8){  
+    alert("Username length should be minimum 8 characters");  
+    return false; 
+  }
+   if (p==null||p=="") {
+    alert("Password must be filled out");
+    return false;}
+    if (atposition<1||dotposition<atposition+2||dotposition+2>=x.length)
+  {  
+     alert("Please enter a valid e-mail address");  
+    return false;}
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  First Name: <input type="text" name="fname"><br><br>
+  Last Name: <input type="text" name="lname"><br><br>
+  Username: <input type="text" name="uname"><br><br>
+  Password: <input type="password" name="password"><br><br>
+  Email: <input type="text" name="email"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
